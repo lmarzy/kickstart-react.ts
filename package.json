@@ -7,8 +7,17 @@
     "test:unit": "jest",
     "test:cypress": "cypress open",
     "start": "webpack-dev-server",
-    "eslint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "lint": "eslint './src/**/*.{js,jsx}'",
+    "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix",
     "stylelint": "src/**/*.scss"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts, tsx}": "eslint --cache --fix"
   },
   "keywords": [],
   "author": "",
@@ -43,7 +52,9 @@
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-standard": "^4.0.1",
     "html-webpack-plugin": "^4.3.0",
+    "husky": "^4.3.6",
     "jest": "^26.1.0",
+    "lint-staged": "^10.5.3",
     "node-sass": "^4.14.1",
     "postcss": "^7.0.32",
     "postcss-focus": "^4.0.0",
