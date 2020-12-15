@@ -13,6 +13,7 @@ export const App: FunctionComponent = (): ReactElement => (
       <Switch>
         <Route path="/" component={HomePage} exact />
       </Switch>
+      <div>testing...</div>
     </main>
     <Footer />
   </>

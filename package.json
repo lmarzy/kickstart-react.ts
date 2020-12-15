@@ -7,16 +7,19 @@
     "test:unit": "jest",
     "test:cypress": "cypress open",
     "start": "webpack-dev-server",
-    "format": "prettier --write .",
+    "format": "prettier",
     "lint": "eslint './src/**/*.{js,jsx}'",
     "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix",
     "stylelint": "src/**/*.scss"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run format && npm run lint:fix",
+      "pre-commit": "lint-staged",
       "pre-push": "npm test:unit"
     }
+  },
+  "lint-staged": {
+    "*": "prettier --write"
   },
   "keywords": [],
   "author": "",
