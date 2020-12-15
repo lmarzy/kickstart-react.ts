@@ -13,11 +13,9 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run lint:fix",
+      "pre-push": "npm test:unit"
     }
-  },
-  "lint-staged": {
-    "*.{ts, tsx}": "eslint --cache --fix"
   },
   "keywords": [],
   "author": "",
