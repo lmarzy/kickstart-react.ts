@@ -37,10 +37,7 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
     alias: {
-      sassHelpers: path.resolve(
-        __dirname,
-        './src/styles/01-helpers/helpers.scss',
-      ),
+      sassHelpers: path.resolve(__dirname, './src/styles/01-helpers/helpers.scss'),
       components: path.resolve(__dirname, './src/components'),
       pages: path.resolve(__dirname, './src/components/pages'),
       sections: path.resolve(__dirname, './src/components/sections'),
