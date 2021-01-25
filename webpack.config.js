@@ -37,12 +37,11 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
     alias: {
-      sassHelpers: path.resolve(__dirname, './src/styles/01-helpers/helpers.scss'),
-      components: path.resolve(__dirname, './src/components'),
-      pages: path.resolve(__dirname, './src/components/pages'),
+      sassHelpers: path.resolve(__dirname, './src/assets/styles/01-helpers/helpers.scss'),
+      pages: path.resolve(__dirname, './src/pages'),
       sections: path.resolve(__dirname, './src/components/sections'),
-      shared: path.resolve(__dirname, './src/components/shared'),
-      styles: path.resolve(__dirname, './src/styles'),
+      common: path.resolve(__dirname, './src/components/shared'),
+      styles: path.resolve(__dirname, './src/assets/styles'),
     },
   },
 };

@@ -1,7 +1,7 @@
 import React, { ReactElement, useState } from 'react';
 
-import { Nav } from '../nav';
-import { Container } from '../../shared';
+import { Nav } from '../';
+import { Container } from '../../../components/common';
 
 import './header.scss';
 
