@@ -8,8 +8,6 @@ import './header.scss';
 export const Header = (): ReactElement => {
   const [navVisible, toggleNavVisibility] = useState(false);
 
-  console.log(navVisible);
-
   return (
     <header className="c-header">
       <Container>

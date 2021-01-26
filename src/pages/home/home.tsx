@@ -23,8 +23,6 @@ export const HomePage: FunctionComponent = (): ReactElement => {
     setValue(value - 1);
   };
 
-  console.log(data);
-
   return (
     <Container>
       <h1>Home Page</h1>
