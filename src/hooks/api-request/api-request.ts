@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export const useApiRequest = (url: string): { error: string; isLoaded: boolean; data: any[] } => {
+export const useApiRequest = (url: string): [string, boolean, any[]] => {
   const [data, setData] = useState();
   const [isLoaded, setIsLoaded] = useState(false);
   const [error, setError] = useState(null);
@@ -20,5 +20,5 @@ export const useApiRequest = (url: string): { error: string; isLoaded: boolean; 
     fetchData();
   }, [url]);
 
-  return { error, isLoaded, data };
+  return [error, isLoaded, data];
 };
