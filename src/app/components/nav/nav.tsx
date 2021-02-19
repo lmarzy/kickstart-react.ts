@@ -1,7 +1,8 @@
-import React, { ReactElement, FunctionComponent } from 'react';
+import './nav.scss';
+
+import React, { FunctionComponent, ReactElement } from 'react';
 import { Link } from 'react-router-dom';
 
-import './nav.scss';
 interface NavProps {
   visible: boolean;
   closeNav: (arg0: boolean) => void;

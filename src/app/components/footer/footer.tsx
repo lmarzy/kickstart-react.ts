@@ -1,8 +1,8 @@
+import './footer.scss';
+
 import React, { ReactElement } from 'react';
 
 import { Container } from '../../../components/common';
-
-import './footer.scss';
 
 export const Footer = (): ReactElement => (
   <footer className="c-footer">

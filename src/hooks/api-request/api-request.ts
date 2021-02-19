@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export const useApiRequest = (url: string): [string, boolean, any[]] => {
   const [data, setData] = useState();

@@ -1,9 +1,9 @@
+import './header.scss';
+
 import React, { ReactElement, useState } from 'react';
 
-import { Nav } from '../';
 import { Container } from '../../../components/common';
-
-import './header.scss';
+import { Nav } from '../';
 
 export const Header = (): ReactElement => {
   const [navVisible, toggleNavVisibility] = useState(false);

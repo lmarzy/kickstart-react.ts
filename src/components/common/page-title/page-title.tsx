@@ -1,6 +1,6 @@
-import React, { ReactElement, FunctionComponent } from 'react';
-
 import './page-title.scss';
+
+import React, { FunctionComponent, ReactElement } from 'react';
 
 interface PageTitleProps {
   title: string;

@@ -1,7 +1,7 @@
 import React, { FunctionComponent, ReactElement, useState } from 'react';
-import { useTodos } from '../../hooks/get-todos/get-todos';
 
 import { Container } from '../../components/common';
+import { useTodos } from '../../hooks/get-todos/get-todos';
 
 export const HomePage: FunctionComponent = (): ReactElement => {
   // const { data, error, isLoaded } = useApiRequest('https://jsonplaceholder.typicode.com/todos');

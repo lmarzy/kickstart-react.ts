@@ -1,8 +1,9 @@
+import { cleanup, fireEvent, render } from '@testing-library/react';
 import React from 'react';
-import { render, cleanup, fireEvent } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 
 import { Header } from './header';
+
 describe('Header Component', () => {
   afterEach(cleanup);
   test('shows correct title', () => {
