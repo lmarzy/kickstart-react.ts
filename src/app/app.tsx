@@ -1,10 +1,10 @@
-import React, { ReactElement, FunctionComponent } from 'react';
+import 'styles/app.scss';
+
+import React, { FunctionComponent, ReactElement } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import { HomePage } from '../pages';
-import { Header, Footer } from './components';
-
-import 'styles/app.scss';
+import { Footer, Header } from './components';
 
 export const App: FunctionComponent = (): ReactElement => (
   <>
