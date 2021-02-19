@@ -13,18 +13,6 @@
     "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix",
     "stylelint": "src/**/*.scss"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm run test:unit"
-    }
-  },
-  "lint-staged": {
-    "*": [
-      "prettier --write",
-      "npm run lint:fix"
-    ]
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
