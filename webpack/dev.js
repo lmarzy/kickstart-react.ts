@@ -17,14 +17,6 @@ module.exports = () => {
       port: 8000,
       historyApiFallback: true,
     },
-    module: {
-      rules: [
-        {
-          test: /\.(s*)css$/,
-          use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
-        },
-      ],
-    },
     plugins: [dotEnv],
   });
 };

@@ -7,5 +7,5 @@ interface PageTitleProps {
 }
 
 export const PageTitle: FunctionComponent<PageTitleProps> = ({ title }): ReactElement => (
-  <h1 className="c-page-title">{title}</h1>
+  <h1>{title}</h1>
 );
