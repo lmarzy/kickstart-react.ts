@@ -1,34 +1,20 @@
-import { cleanup, fireEvent, render } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
+import { ThemeProvider } from '../../../contexts';
 import { Header } from './header';
 
 describe('Header Component', () => {
-  afterEach(cleanup);
   test('shows correct title', () => {
     const { getByText } = render(
       <BrowserRouter>
-        <Header />
+        <ThemeProvider>
+          <Header />
+        </ThemeProvider>
       </BrowserRouter>,
     );
 
-    expect(getByText('React Apollo')).toBeInTheDocument();
-  });
-
-  test('toggles site navigation', () => {
-    const { getByText } = render(
-      <BrowserRouter>
-        <Header />
-      </BrowserRouter>,
-    );
-
-    const btnShow = getByText('Show Site Navigation');
-    expect(btnShow).toBeInTheDocument();
-
-    fireEvent.click(btnShow);
-
-    const btnHide = getByText('Hide Site Navigation');
-    expect(btnHide).toBeInTheDocument();
+    expect(getByText('React')).toBeInTheDocument();
   });
 });

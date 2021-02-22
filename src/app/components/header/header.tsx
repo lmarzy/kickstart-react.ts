@@ -19,7 +19,7 @@ export const Header = (): ReactElement => {
   return (
     <header>
       <Container>
-        <StyledH1>React Apollo</StyledH1>
+        <StyledH1>React</StyledH1>
         <Nav visible={navVisible} closeNav={toggleNavVisibility} />
       </Container>
     </header>
