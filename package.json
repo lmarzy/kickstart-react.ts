@@ -8,7 +8,7 @@
     "test:cypress": "cypress open",
     "start": "webpack serve --config webpack/dev.js",
     "build": "webpack --config webpack/prod.js",
-    "prettier:fix": "prettier --write './src/**/*.{ts,tsx}'",
+    "prettier:fix": "prettier './src/**/*.{ts,tsx}' --write",
     "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix"
   },
   "keywords": [],
