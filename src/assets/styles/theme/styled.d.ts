@@ -18,7 +18,9 @@ declare module 'styled-components' {
       };
     };
     fontSizes: { [key: number]: string };
-    maxWidth: string;
+    layout: {
+      maxWidth: string;
+    };
     spacers: { [key: number]: string };
     breakpoints: { [key: string]: string };
   }

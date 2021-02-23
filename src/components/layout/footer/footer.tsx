@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 
-import { Container } from '../../../components/common';
+import { Container } from '..';
 
 export const Footer = (): ReactElement => (
   <footer>

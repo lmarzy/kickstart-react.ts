@@ -1,8 +1,8 @@
 import React, { ReactElement, useState } from 'react';
 import styled from 'styled-components';
 
-import { Container } from '../../../components/common';
-import { Nav } from '../';
+import { Nav } from '../../sections';
+import { Container } from '..';
 
 const StyledH1 = styled.h1`
   font-size: ${({ theme }) => theme.fontSizes[4]};
