@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 import { boxSizing, normalise, reset } from './base';
 import { images, links, page, tables } from './elements';
 
-export const GlobalStyles = createGlobalStyle`
+export default createGlobalStyle`
   ${boxSizing}
   ${reset}
   ${normalise}

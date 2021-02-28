@@ -11,11 +11,11 @@
     "esModuleInterop": true,
     "baseUrl": "./src",
     "paths": {
-      "components/*": ["./src/components"],
-      "pages/*": ["./src/components/pages"],
-      "sections/*": ["./src/components/sections"],
-      "shared/*": ["./src/components/shared"],
-      "styles/*": ["./src/styles"]
+      "@assets/*": ["assets/*"], 
+      "@components/*": ["components/*"],
+      "@config/*": ["config/*"],
+      "@contexts": ["contexts"],
+      "@hooks/*": ["hooks/*"],
     }
   },
   "include": ["./src/"],

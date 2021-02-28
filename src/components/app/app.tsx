@@ -1,10 +1,10 @@
 import React, { FunctionComponent, ReactElement } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import { GlobalStyles } from '../assets/styles/global';
-import { Footer, Header } from '../components/layout';
-import { ThemeProvider } from '../contexts';
-import { HomePage } from '../pages';
+import GlobalStyles from '@assets/styles/global';
+import { Footer, Header } from '@components/layout';
+import routes from '@config/routes';
+import { ThemeProvider } from '@contexts';
 
 export const App: FunctionComponent = (): ReactElement => (
   <ThemeProvider>
@@ -12,9 +12,10 @@ export const App: FunctionComponent = (): ReactElement => (
     <Header />
     <main>
       <Switch>
-        <Route path="/" component={HomePage} exact />
+        {routes.map((route) => (
+          <Route key={route.id} path={route.path} component={route.component} exact />
+        ))}
       </Switch>
-      <div>testing...</div>
     </main>
     <Footer />
   </ThemeProvider>

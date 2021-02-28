@@ -1,7 +1,8 @@
 import React, { ReactElement, useState } from 'react';
 import styled from 'styled-components';
 
-import { Nav } from '../../sections';
+import { Nav } from '@components/sections';
+
 import { Container } from '..';
 
 const StyledH1 = styled.h1`
