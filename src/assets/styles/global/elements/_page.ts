@@ -18,8 +18,8 @@ export const page = css`
     font-family: ${({ theme }) => theme.typography.fontFamily};
     font-size: ${({ theme }) => theme.typography.fontSize};
     line-height: ${({ theme }) => theme.typography.lineHeight};
-    color: ${({ theme }) => theme.colors.main.text};
-    background-color: ${({ theme }) => theme.colors.main.bg};
+    color: var(--text-color);
+    background-color: var(--bg-color);
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
   }

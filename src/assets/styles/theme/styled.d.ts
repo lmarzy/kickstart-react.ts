@@ -7,21 +7,11 @@ declare module 'styled-components' {
       fontFamily: string;
       lineHeight: number;
     };
-    colors: {
-      main: {
-        text: string;
-        bg: string;
-      };
-      brand: {
-        primary: string;
-        secondary: string;
-      };
-    };
     fontSizes: { [key: number]: string };
     layout: {
       maxWidth: string;
     };
-    spacers: { [key: number]: string };
+    spacing: (multiplier: number) => string;
     breakpoints: { [key: string]: string };
   }
 }

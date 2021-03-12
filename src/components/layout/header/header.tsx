@@ -7,7 +7,8 @@ import { Container } from '..';
 
 const StyledH1 = styled.h1`
   font-size: ${({ theme }) => theme.fontSizes[4]};
-  margin-bottom: ${({ theme }) => theme.spacers[4]};
+  margin-bottom: ${({ theme }) => theme.spacing(2)};
+  color: var(--theme-primary);
 
   @media ${({ theme }) => theme.breakpoints[10]} {
     font-size: ${({ theme }) => theme.fontSizes[8]};

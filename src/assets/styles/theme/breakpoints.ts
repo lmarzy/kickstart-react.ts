@@ -2,8 +2,10 @@
 // THEME/BREAKPOINTS
 // ========================================================================
 
+import { pxToEm } from '../utils';
+
 const generateMediaQuery = (width: number): string => {
-  return `(min-width: ${width}px)`;
+  return `(min-width: ${pxToEm(width)})`;
 };
 
 export const breakpoints = {
